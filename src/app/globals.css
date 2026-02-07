@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #1F3A5F;
+  --color-secondary: #3A5F7D;
+  --color-accent: #C9A227;
+  --color-background: #F8F9FB;
+  --color-text: #1A1A1A;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-serif: var(--font-playfair), ui-serif, Georgia;
+}
+
+:root {
+  --background: #F8F9FB;
+  --foreground: #1A1A1A;
+  --primary: #1F3A5F;
+  --accent: #C9A227;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.25;
+}
+
+.academic-divider {
+  height: 1px;
+  background-color: #E2E8F0;
+  margin: 2rem 0;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #162a45;
+}
